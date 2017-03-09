@@ -6,12 +6,15 @@ package com.nested.anonymousexample;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(new AbstractBehaviour() {
+        // this is an anonymous class
+        AbstractBehaviour absB = new AbstractBehaviour() {
             @Override
             public String implementMe() {
                 return "Print something";
             }
-        }.implementMe());
+        };
+
+        System.out.println(absB.implementMe());
 
 
 
