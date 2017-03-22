@@ -28,4 +28,16 @@ public class Person {
     public void setAge(Integer age) {
         this.age = age;
     }
+
+    public boolean isOlderThan10() {
+        return this.age >= 10;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

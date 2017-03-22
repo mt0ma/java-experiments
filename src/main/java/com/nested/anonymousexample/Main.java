@@ -14,7 +14,12 @@ public class Main {
             }
         };
 
-        System.out.println(absB.implementMe());
+        /*System.out.println(new AbstractBehaviour() {
+            @Override
+            public String implementMe() {
+                return "Print something";
+            }
+        }.implementMe());*/
 
 
 

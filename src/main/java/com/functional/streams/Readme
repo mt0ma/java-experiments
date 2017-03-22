@@ -1,0 +1,9 @@
+Java 8 introduces Stream API.
+
+A stream represents a sequence of elements and supports different kind of operations to perform computations upon those elements.
+
+Stream operations are either intermediate or terminal.
+    INTERMEDIATE - return a stream (you can chain operations)
+    TERMINAL - void/non stream result
+
+http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html

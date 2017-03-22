@@ -1,0 +1,14 @@
+In Java 8, thanks to lambda expressions, we can use methods as if they were objects, or primitive values.
+Method references help to point to methods by their names.
+A method reference is described using :: (double colon) symbol.
+
+A method reference can be used to point the following types of methods −
+     Static methods
+     Instance methods - of a particular type or of an existing object
+     Constructors using new operator (TreeSet::new)
+
+
+
+Instead of using AN ANONYMOUS CLASS
+you can use A LAMBDA EXPRESSION
+And if this just calls one method, you can use A METHOD REFERENCE

@@ -1,0 +1,32 @@
+Lambda expressions typically include a parameter list, a return type, and a body.
+
+Examples of λEs include:
+() -> 66
+(x,y) -> x + y
+(Integer x, Integer y) -> x*y
+(String s) -> { System.out.println(s); }
+
+Syntax
+A lambda expression is characterized by the following syntax −
+
+	(parameter list) -> { statements; }
+
+Following are the important characteristics of a lambda expression:
+
+ Optional type declaration − No need to declare the type of a parameter. The compiler can inference the same from the value of the parameter.
+ Optional parenthesis around parameter − No need to declare a single parameter in parenthesis. For multiple parameters, parentheses are required.
+ Optional curly braces − No need to use curly braces in expression body if the body contains a single statement.
+ Optional return keyword − The compiler automatically returns the value if the body has a single expression to return the value.
+                            Curly braces are required to indicate that expression returns a value.
+
+
+ !!!
+ λEs must have a functional interface (FI).
+ An FI is an interface that has one abstract method and zero or more default methods.
+ FIs provide target types for lambda expressions and method references, and ideally should be annotated with @FunctionalInterface
+ to aid the developer and compiler with design intent.
+
+
+ https://github.com/shekhargulati/java8-the-missing-tutorial/blob/master/02-lambdas.md
+
+ Java 8 built in functional interfaces - java.util.function

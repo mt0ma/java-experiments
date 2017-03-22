@@ -3,6 +3,7 @@ package com.functional.lambda;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Supplier;
 
 /**
  * Created by miruna on 3/8/2017.
@@ -21,7 +22,7 @@ public class LambdaExperiments {
         persons.add(p1);
         persons.add(p2);
 
-        // background
+        // background - using anonymous classes
         persons.sort(new Comparator<Person>() {
             @Override
             public int compare(Person o1, Person o2) {
@@ -33,4 +34,5 @@ public class LambdaExperiments {
         persons.sort((o1,o2) -> o1.getName().compareTo(o2.getName()));
 
     }
+
 }
