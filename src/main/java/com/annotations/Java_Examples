@@ -1,0 +1,7 @@
+1. annotate a class to enerate documentaion based on the info
+2. simulate how JUnit handles some testing annotations like @Test and @Ignore
+3. Type & repeatable annotations example
+
+- TestMe & IgnoreMe annotatiomns
+- class with methods that are annotated with the above annotations
+- class that handles the execution of the methods annotated with test and ignores th execution of the others

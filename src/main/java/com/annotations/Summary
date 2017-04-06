@@ -1,0 +1,47 @@
+Introduced in Java 5 - mechanism of writing code related metadata on the code itself
+
+What they are:
+--------------
+Annotations are code metadata; they contain information about the code itself.
+
+The annotated code is not directly affected by their annotations.
+These only provide information about it to third systems that may use (or not) the annotations for different purposes (consumers).
+Consumers use reflection in Java in order to read and analyze the annotated source code.
+
+Annotations can be used for many different purposes, the most common ones are:
+
+1. Information for the compiler: Annotations can be used by the compiler to produce warnings or even errors based on different rules.
+                                 One example of this kind of usage is the Java 8 @FunctionalInterface annotation.
+                                 This one makes the compiler to validate the annotated class and check if it is a correct functional interface or not.
+
+2. Documentation: Annotations can be used by software applications to measure the quality of the code like FindBugs or PMD do or generate reports automatically like Jenkins, Jira or Teamcity.
+
+3. Code generation: annotations can be used to generate code or XML files automatically using metadata information present in the code.
+                    A good example of this is the JAXB library.
+
+4. Runtime processing: Annotations that are examined in runtime can be used for different objectives like unit testing (Junit),
+                       dependency injection (Spring), validation, logging (Log4J) ,data access (Hibernate) etc.
+
+
+Syntax: @Override
+-------
+
+@ - tells the compiler that the following are annotations:
+
+@Override
+void mySuperMethod() { ... }
+
+The annotation can include elements, which can be named or unnamed, and there are values for those elements:
+
+@Author(
+   name = "Benjamin Franklin",
+   date = "3/27/2003"
+)
+class MyClass() { ... }
+
+If there is only one value the name can be omitted. Also if the annotation has no elements, the parenthesis is omitted.
+
+Examples of some predefined Java annotations: @Deprecated, @Override, and @SuppressWarnings, @FunctionalInterface
+
+
+Where they are used - Annotations can be applied to declarations & types(java 8)---------------
