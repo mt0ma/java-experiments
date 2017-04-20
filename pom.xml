@@ -30,5 +30,10 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
+        <dependency>
+            <groupId>org.snmp4j</groupId>
+            <artifactId>snmp4j</artifactId>
+            <version>2.5.6</version>
+        </dependency>
     </dependencies>
 </project>
