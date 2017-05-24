@@ -1,0 +1,25 @@
+Threading topics
+------------------
+- what is a thread, threads vs processes
+- my first thread - implement Runnable or extend Thread
+- run() and start() methods of java threads
+- volatile vs synchronized
+- race condition, deadlocks
+- Consumer Producer problem and solution
+- running threads with Executor Service
+- Future/Callables
+
+
+
+Thread - lightweight process; can run in parallel
+
+Threads vs Processes
+--------------------
+
+Both processes and threads are independent sequences of execution.
+The typical difference is that threads (of the same process) run in a shared memory space, while processes run in separate memory spaces.
+
+
+Thread scheduler in java is the part of the JVM that decides which thread should run.
+There is no guarantee that which runnable thread will be chosen to run by the thread scheduler.
+Only one thread at a time can run in a single process.
