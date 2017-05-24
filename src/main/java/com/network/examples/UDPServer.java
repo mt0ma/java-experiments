@@ -23,7 +23,8 @@ public class UDPServer {
                 int port = receivePacket.getPort();
 
                 // trimitere
-                String capitalizedSentence = sentence.toUpperCase();
+                String capitalizedSentence = sentence.toUpperCase() + " CARACTERE ";
+                System.out.println("Sending back: "+capitalizedSentence+" "+capitalizedSentence.getBytes().length);
                 sendData = capitalizedSentence.getBytes();
                 DatagramPacket sendPacket =
                         new DatagramPacket(sendData, sendData.length, IPAddress, port);

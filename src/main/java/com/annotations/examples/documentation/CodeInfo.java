@@ -8,8 +8,9 @@ import java.lang.annotation.RetentionPolicy;
  * Created by miruna on 4/6/2017.
  */
 @Retention(RetentionPolicy.SOURCE)
+@Documented
 public @interface CodeInfo {
     String author();
     String date();
-    String description();
+    String description() default "Documentation";
 }
